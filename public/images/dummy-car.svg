@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="360" viewBox="0 0 860 360" fill="none">
+  <defs>
+    <linearGradient id="carBody" x1="130" y1="140" x2="670" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10D0EC"/>
+      <stop offset="1" stop-color="#0A9FB5"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="280" y1="120" x2="520" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C3B4E"/>
+      <stop offset="1" stop-color="#1A2533"/>
+    </linearGradient>
+    <filter id="shadow" x="80" y="210" width="700" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <ellipse cx="430" cy="260" rx="260" ry="24" fill="#245B86" fill-opacity="0.35" filter="url(#shadow)"/>
+  <path d="M170 220C180 182 222 148 300 140H495C560 142 620 176 655 220V242H170V220Z" fill="url(#carBody)"/>
+  <path d="M294 140H486C470 118 442 104 402 104C358 104 322 118 294 140Z" fill="url(#glass)"/>
+  <rect x="192" y="194" width="168" height="28" rx="8" fill="#0E1620"/>
+  <rect x="516" y="192" width="114" height="22" rx="8" fill="#E6FCFF" fill-opacity="0.92"/>
+  <circle cx="272" cy="244" r="38" fill="#121821"/>
+  <circle cx="272" cy="244" r="18" fill="#3F5466"/>
+  <circle cx="576" cy="244" r="40" fill="#121821"/>
+  <circle cx="576" cy="244" r="19" fill="#3F5466"/>
+  <text x="430" y="332" text-anchor="middle" fill="#1D4A71" font-size="20" font-family="Arial, sans-serif">DUMMY CAR IMAGE</text>
+</svg>

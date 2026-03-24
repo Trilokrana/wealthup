@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WealthUp Landing Page
 
-## Getting Started
+A modern, responsive wealth-management landing page built with Next.js App Router, React, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+The project includes a complete single-page marketing experience with custom-designed sections, image-driven UI blocks, and a polished financial-product visual style.
+
+## Live Sections
+
+The home page is composed of these reusable components:
+
+- Navbar
+- Hero
+- BackedBy
+- GrowthWays
+- FasterGrowth
+- PlanBanner
+- HowItWorks
+
+Main page composition is defined in `src/app/page.tsx`.
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript 5
+- Tailwind CSS 4
+- ESLint 9 + `eslint-config-next`
+- `next/font` (Geist + Geist Mono)
+
+## Project Structure
+
+```text
+wealthup/
+	public/
+		images/               # All design assets (logos, cards, icons, hero art, textures)
+	src/
+		app/
+			globals.css         # Global styles + custom slider styling
+			layout.tsx          # Root layout + metadata + fonts
+			page.tsx            # Home page composition
+		components/
+			Navbar.tsx
+			Hero.tsx
+			BackedBy.tsx
+			GrowthWays.tsx
+			FasterGrowth.tsx
+			PlanBanner.tsx
+			HowItWorks.tsx
+```
+
+## Features
+
+- Fully componentized landing page architecture
+- Responsive layouts for mobile/tablet/desktop
+- Custom UI elements:
+	- Styled range sliders in Hero section
+	- Image-driven investment cards
+	- Patterned CTA banner
+	- Stacked process cards in HowItWorks
+- Easy asset swapping through `public/images`
+- Design-friendly code with clear section-level separation
+
+## Installation
+
+1. Clone the repository.
+
+```bash
+git clone https://github.com/Trilokrana/wealthup.git
+cd wealthup
+```
+
+2. Install dependencies.
+
+```bash
+npm install
+```
+
+## Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint checks
 
-## Learn More
+## Design / Asset Notes
 
-To learn more about Next.js, take a look at the following resources:
+- All static design assets are stored in `public/images`.
+- Replace or update images without touching component logic as long as filenames remain consistent.
+- If asset names change, update corresponding paths in component files.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Metadata
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Metadata is configured in `src/app/layout.tsx`:
 
-## Deploy on Vercel
+- Title: `WealthUp - Your Path to Financial Growth`
+- Description: currently generic and can be customized for SEO
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Build check
+
+```bash
+npm run build
+```
+
+### Deploy options
+
+- Vercel (recommended for Next.js)
+- Netlify
+- Any Node.js hosting that supports Next.js standalone/server mode
+
+## Git
+
+Repository has been initialized with an initial commit.
+
+
+
+

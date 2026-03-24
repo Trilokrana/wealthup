@@ -63,6 +63,12 @@ wealthup/
 ## Installation
 
 1. Clone the repository.
+
+```bash
+git clone https://github.com/Trilokrana/wealthup.git
+cd wealthup
+```
+
 2. Install dependencies.
 
 ```bash
@@ -115,15 +121,6 @@ npm run build
 
 Repository has been initialized with an initial commit.
 
-Suggested branch naming:
 
-- `main` as default branch
-- feature branches for section updates (example: `feature/hero-redesign`)
 
-## Future Improvements
-
-- Add animation/motion transitions for section entrances
-- Improve accessibility labels and keyboard focus states
-- Add unit/UI tests for key sections
-- Add CI workflow for lint + build on pull requests
 
